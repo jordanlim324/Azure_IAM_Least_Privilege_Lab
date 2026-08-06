@@ -28,7 +28,9 @@ Azure_IAM_Least_Privilege_Lab/
 │   ├── README.md
 │   └── Screenshots/
 ├── 02_RBAC_Roles/          (in progress)
-└── 
+│   ├── README.md
+│   ├── EmployeeCustomRoleDefinition.json
+│   └── Screenshots/
 ```
 
 ## Scenarios and Table of Contents
