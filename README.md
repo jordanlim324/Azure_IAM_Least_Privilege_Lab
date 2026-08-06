@@ -10,7 +10,7 @@ This project is designed to leverage free Azure resources to understand and prac
 - Custom RBAC roles
 - Group-based access assignment
 - Security baseline configurations
-- Infrastructure documented as code (TBD)
+- Infrastructure documented as code
 
 ## Tech Stack/Tools Used
 - Microsoft EntraID (free tier)
