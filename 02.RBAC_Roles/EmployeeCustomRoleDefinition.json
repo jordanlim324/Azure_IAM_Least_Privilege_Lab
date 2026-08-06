@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "roleName": "Shirabuki_Employee_Custom_Role",
+        "description": "",
+        "assignableScopes": [
+            "/subscriptions/[My_Subscription_ID]/resourceGroups/Shirabuki_Corporation"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "*/read",
+                    "*/write"
+                ],
+                "notActions": [
+                    "*/delete"
+                ],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}
