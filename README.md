@@ -24,10 +24,10 @@ This project is designed to leverage free Azure resources to understand and prac
 Azure_IAM_Least_Privilege_Lab/
 ├── README.md
 ├── LICENSE
-├── 01_Users_and_Groups/
+├── 01.Users_And_Groups/
 │   ├── README.md
 │   └── Screenshots/
-├── 02_RBAC_Roles/          (in progress)
+├── 02.RBAC_Roles/          (in progress)
 │   ├── README.md
 │   ├── EmployeeCustomRoleDefinition.json
 │   └── Screenshots/
