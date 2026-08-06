@@ -2,6 +2,10 @@
 
 Demonstrating least-privilege IAM design in Microsoft Azure's EntraID using free-tier RBAC and Security Defaults.
 
+Initally dated: 06 August 2026
+
+Most recent update: 06 August 2026
+
 ## Project Overview
 This project is designed to leverage free Azure resources to understand and practice IAM principles for a fictionalized organization called Shirabuki Corporation. The primary goal of this project is to build a practical, demonstrable experience  with enterprise access control patterns before applying them in a production environment. Shirabuki Corp. has two admins, three employees, and one contractor.
 
