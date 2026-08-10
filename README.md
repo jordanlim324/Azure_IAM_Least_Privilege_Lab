@@ -1,4 +1,4 @@
-# Azure_IAM_Least_Privilege_Lab
+# Azure IAM Least Privilege Lab
 
 Demonstrating least-privilege IAM design in Microsoft Azure's EntraID using free-tier RBAC and Security Defaults.
 
