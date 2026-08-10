@@ -37,7 +37,6 @@ Azure_IAM_Least_Privilege_Lab/
 │   └── Screenshots/
 ├── 03.RBAC_Roles/          (in progress)
 │   ├── README.md
-│   ├── EmployeeCustomRoleDefinition.json
 │   └── Screenshots/
 ```
 
@@ -46,7 +45,7 @@ Azure_IAM_Least_Privilege_Lab/
 |---|---|---|
 | [01 - Users and Groups](./01_Users_and_Groups/README.md) | Personas, security groups, and ownership/governance decisions for Shirabuki Corp | ✅ Complete |
 | [02 - RBAC Roles](./02_RBAC_Roles/README.md) | Custom least-privilege roles assigned to groups | ✅ Complete |
-| [03 - ](./03_Access_Verification/README.md) | Requirement to set up new password after initial login | 🔧 In Progress |
+| [03 - ](./03_Access_Verification/README.md) | Proof of role access enforcement | 🔧 In Progress |
 
 ## Architecture Overview
 TBD
