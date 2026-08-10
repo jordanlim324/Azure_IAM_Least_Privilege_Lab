@@ -2,7 +2,7 @@
 After building out the users and groups, I designed a tiered role structure. Administrators in this resource group had a broad, but access-limited role, employees were given a custom read/write role, and contractors were given a read-only access role. With this portion of the project, I wanted to create roles that would mimic production environments that I had seen in enterprise environments.
 
 ## The Problem
-Shirabuki Corp needs a form of access-control for their users and groups. Groups and users exist, but have no permissions assigned or granted yet. Broadly speaking, the administrators should be able to manage most of the resource group, the employees should be able to work without being able to delete items in the RG, and contractors should only have visibility privileges.
+Shirabuki Corporation needs a form of access-control for their users and groups. Groups and users exist, but have no permissions assigned or granted yet. Broadly speaking, the administrators should be able to manage most of the resource group, the employees should be able to work without being able to delete items in the RG, and contractors should only have visibility privileges.
 
 ## What Was Built
 - Roles for each group of users

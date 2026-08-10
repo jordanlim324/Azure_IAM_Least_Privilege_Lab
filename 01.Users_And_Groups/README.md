@@ -3,7 +3,7 @@ For the fictionalized Shirabuki Corporation, I decided to create distinct users,
 This was an important distinction as I wanted to closely emulate real-world enterprise environments without overcomplicating my understanding of the concepts at play.
 
 ## The Problem
-Shirabuki Corporation currently has two administrators, three employees, and one contractor from a third party company. Shirabuki Corporation wants each user to be grouped by their role, and have access controls to the resource group per their role assignment.
+Shirabuki Corporation currently has two administrators, three employees, and one contractor from a third party company. Shirabuki Corporation wants each user to be grouped by their role, and have access controls to the resource group per their role assignment. Regarding password management, every user, no matter if they are an administrator, employee, or contractor, will need to do a password reset upon the first login attempt.
 
 ## What Was Built
 - Resource Group
@@ -26,6 +26,11 @@ Shirabuki Corporation currently has two administrators, three employees, and one
    - External Contractor Decisions
 
       To tie the contractor role closer to production level environments, I used a spare email account to act as the third party contractor to be invited. I noted that guest users can belong to groups in the same way member accounts can, and specifically bringing an external user as a contractor/vendor can reflect how enterprise organizations distinguish the access of employees versus third parties. This includes separate governance measures, and in a production environment with P2 licensing, automatic access expiration tied to contract duration.
+   - Password Governance Standards
+
+       Upon review of each user created, I noted that each user had "Force change password next sign-in" enabled. To see if this functionality was enabled by default, I went through the "Create New User" flow and found that "Auto-generate password" was checked automatically.
+       The idea behind this was to ensure that owners and administrators should not continue to have access to employee or contractor passwords. By enabling a forced reset when first signing into their accounts, this ensures that only the account holder knows their working credentials, rather than an administrator still having access via the initial password.
+       Shirabuki Employee 1 was used for demonstration purposes.
 
 ## Screenshots
 - Users List
@@ -49,3 +54,11 @@ Shirabuki Corporation currently has two administrators, three employees, and one
    ![Microsoft Azure screenshot of employee members list](Screenshots/Security_Group_Employee_Members-Microsoft_Azure.png)
    - Contractor Members
    ![Microsoft Azure screenshot of contractor members list](Screenshots/Security_Group_Contractor_Members-Microsoft_Azure.png)
+
+- Inital Password Reset Requirement (Shirabuki Employee 1)
+   - Going through flow to see if "Auto-generate password" was enabled by default
+   ![Microsoft Azure screenshot of Auto-generate password checkbox](Screenshots/Auto-Generate_Password_Checkbox-Microsoft_Azure.png)
+   - Password Reset Requirement in Azure Portal
+   ![Microsoft Azure screenshot of password reset requirement after intial login](Screenshots/Shirabuki_Employee_1_Password_Profile-Microsoft_Azure.png)
+   - Password Reset Requirement during sign in
+   ![Microsoft Azure screenshot of password reset requirement after intial login](Screenshots/Shirabuki_Employee_1_Password_Reset-Microsoft_Azure.png)
