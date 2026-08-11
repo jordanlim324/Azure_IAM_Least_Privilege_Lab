@@ -2,7 +2,7 @@
 
 **Command:**
 ```powershell
-PS C:\Users\WDAGUtilityAccount>az tag create  --resource-id /subscriptions/<MySubscriptionId>/resourceGroups/Shirabuki_Corporation --tags TestTag=EmployeeVerification
+PS C:\Users\WDAGUtilityAccount>az tag create  --resource-id /subscriptions/<MySubscriptionId>/resourceGroups/Shirabuki_Corporation --tags TestTag2=Employee2Verification
 ```
 Result: Success
 
