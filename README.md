@@ -53,8 +53,8 @@ Azure_IAM_Least_Privilege_Lab/
 | [01 - Users and Groups](./01.Users_and_Groups/README.md) | Personas, security groups, and ownership/governance decisions for Shirabuki Corp | ✅ Complete |
 | [02 - RBAC Roles](./02.RBAC_Roles/README.md) | Custom least-privilege roles assigned to groups | ✅ Complete |
 | [03 - Access Verification](./03.Access_Verification/README.md) | Proof of role access enforcement | ✅ Complete |
-| [04 - Security Defaults and Baseline Hardening](./04.Security_Defaults_and_Baseline_Hardening/README.md) | Personas, security groups, and ownership/governance decisions for Shirabuki Corp | 🔧 In Progress |
-| [05 - Mini Audit GRC](./05.Mini_Audit_GRC/README.md) | Custom least-privilege roles assigned to groups | ✅ Complete |
+| [04 - Security Defaults and Baseline Hardening](./04.Security_Defaults_And_Baseline_Hardening/README.md) | Personas, security groups, and ownership/governance decisions for Shirabuki Corp | 🔧 In Progress |
+| [05 - Mini Audit GRC](./05.Mini_Audit_GRC/README.md) | Custom least-privilege roles assigned to groups | 🔧 In Progress |
 
 ## Architecture Overview
 TBD
