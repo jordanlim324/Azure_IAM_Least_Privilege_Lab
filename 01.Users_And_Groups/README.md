@@ -27,7 +27,7 @@ Shirabuki Corporation currently has two administrators, three employees, and one
 
       To tie the contractor role closer to production level environments, I used a spare email account to act as the third party contractor to be invited. I noted that guest users can belong to groups in the same way member accounts can, and specifically bringing an external user as a contractor/vendor can reflect how enterprise organizations distinguish the access of employees versus third parties. This includes separate governance measures, and in a production environment with P2 licensing, automatic access expiration tied to contract duration.
 
-      - Sign in behavior specific to the External Contractor/Guest Account is further documented within [Scenario 3: Access_Verification](03.Access_Verification/README.md)
+      - Sign in behavior specific to the External Contractor/Guest Account is further documented within [Scenario 3: Access Verification](03.Access_Verification/README.md)
 
    - Password Governance Standards
 
