@@ -55,7 +55,54 @@ Azure_IAM_Least_Privilege_Lab/
 | [04 - Mini Audit GRC](./04.Mini_Audit_GRC/README.md) | Assessing the project through the lens of a Governance, Risk, and Compliance audit | 🔧 In Progress |
 
 ## Architecture Overview
-TBD
+```mermaid
+graph TD
+    RootTenant["Root Tenant Account<br/>(Owner/Governance)"]
+
+    subgraph Users["Users"]
+        Admin1["Shirabuki_Admin_1"]
+        Admin2["Shirabuki_Admin_2"]
+        Emp1["Shirabuki_Employee_1"]
+        Emp2["Shirabuki_Employee_2"]
+        Emp3["Shirabuki_Employee_3"]
+        Contractor["Shirabuki_Contractor<br/>(Guest)"]
+    end
+
+    subgraph Groups["Security Groups"]
+        GAdmins["sg-shirabuki-admins"]
+        GEmployees["sg-shirabuki-employees"]
+        GContractors["sg-shirabuki-contractors"]
+    end
+
+    subgraph Roles["RBAC Roles"]
+        RContributor["Contributor (Built-in)"]
+        REmployee["Shirabuki_Employee_Custom_Role"]
+        RReader["Reader (Built-in)"]
+    end
+
+    RG["Shirabuki_Corporation<br/>(Resource Group)"]
+
+    RootTenant -.owns.-> GAdmins
+    Admin1 -.owns.-> GEmployees
+    Admin1 -.owns.-> GContractors
+    Admin2 -.owns.-> GEmployees
+    Admin2 -.owns.-> GContractors
+
+    Admin1 -->|member of| GAdmins
+    Admin2 -->|member of| GAdmins
+    Emp1 -->|member of| GEmployees
+    Emp2 -->|member of| GEmployees
+    Emp3 -->|member of| GEmployees
+    Contractor -->|member of| GContractors
+
+    GAdmins -->|assigned| RContributor
+    GEmployees -->|assigned| REmployee
+    GContractors -->|assigned| RReader
+
+    RContributor -->|scoped to| RG
+    REmployee -->|scoped to| RG
+    RReader -->|scoped to| RG
+```
 
 ## Prerequisites
 This project was built using only Microsoft Azure's free tier plan. To reproduce this project, the only things needed are:
