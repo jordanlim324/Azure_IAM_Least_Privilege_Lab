@@ -5,7 +5,7 @@ Now that users, roles, and basic access controls have been established, I wanted
 Shirabuki Corporation has defined and created role-based permissions for Administrators, Employees, and Contractors. While this is a step in the right direction, the company wants to have the permissions tested by an authenticated user before being rolled out to employees and contractors in production. While a majority of users would interact with their accounts through a web portal, verification will also be performed via Azure CLI to ensure that verification happens regardless of the method of entry. Testing both methods rules out the possibility that a restriction is an enforced access boundary, rather than a UI convenience, like a greyed out button.
 
 ## What Was Built
-- This phase of the project leans more towards the testing of RBAC functionality within both the user portal and Azure CLI, to visualize the enforcement mechanism in two different ways.
+- This phase of the project leans more towards the testing of RBAC functionality within both the user portal and Azure CLI to visualize the enforcement mechanism in two different ways.
 - With Employee 1, I operated the user under the assumption that they would primarily access their account through the Azure web portal.
 - With Employee 2, I operated the user under the assumption that they would interface with Azure CLI.
 - With the contractor, I operated the user under the assumption that they would interface with the Azure web portal.
