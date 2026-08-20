@@ -35,6 +35,10 @@ Shirabuki Corporation currently has two administrators, three employees, and one
        The idea behind this was to ensure that owners and administrators should not continue to have access to employee or contractor passwords. By enabling a forced reset when first signing into their accounts, this ensures that only the account holder knows their working credentials, rather than an administrator still having access via the initial password.
        Shirabuki Employee 1 was used for demonstration purposes.
 
+   - Security Defaults
+
+      The MFA registration prompt observed during Employee 1's first sign-in is enforced by Security Defaults, a tenant-wide Entra ID setting (Entra ID → Properties → Manage security defaults). Upon investigation, I confirmed this was "On" by default from tenant creation, meaning there was no need to configure it manually. Security Defaults enforces baseline protections across the entire tenant, including requiring passkeys and/or MFA registration for all users and blocking legacy authentication protocols that don't support modern security controls. This finding is notable because it demonstrates that a free-tier Azure tenant ships with security posture already active and in mind, rather than requiring paid licensing to achieve any baseline protection at all. Employee 3 was used as an example to demonstrate the MFA registraton flow on a fresh account.
+
 ## Screenshots
 - Users List<br>
 ![Microsoft Azure screenshot of users list](Screenshots/Users_List-Microsoft_Azure.png)
@@ -62,6 +66,17 @@ Shirabuki Corporation currently has two administrators, three employees, and one
    - Going through flow to see if "Auto-generate password" was enabled by default<br>
    ![Microsoft Azure screenshot of Auto-generate password checkbox](Screenshots/Auto-Generate_Password_Checkbox-Microsoft_Azure.png)
    - Password Reset Requirement in Azure Portal<br>
-   ![Microsoft Azure screenshot of password reset requirement after intial login](Screenshots/Shirabuki_Employee_1_Password_Profile-Microsoft_Azure.png)
+   ![Microsoft Azure screenshot of password reset requirement after initial login](Screenshots/Shirabuki_Employee_1_Password_Profile-Microsoft_Azure.png)
    - Password Reset Requirement during sign in<br>
-   ![Microsoft Azure screenshot of password reset requirement after intial login](Screenshots/Shirabuki_Employee_1_Password_Reset-Microsoft_Azure.png)
+   ![Microsoft Azure screenshot of password reset requirement after initial login](Screenshots/Shirabuki_Employee_1_Password_Reset-Microsoft_Azure.png)
+
+- Security Defaults
+   - Authentication Method Policies page, Microsoft Authenticator Enabled by default.<br>
+   ![Microsoft Azure screenshot of default authentication methods, Passkey (FIDO2) and Microsoft Authenticator highlighted](Screenshots/Authentication_Methods-Microsoft_Azure.png)
+   - Verifying Authentication steps via Microsoft Authenticator for Employee 3<br>
+      - Setting up Microsoft Authenticator for the first time as Employee 3
+      ![Microsoft Azure screenshot of MFA setup for Employee 3](Screenshots/Setting_up_MS_Authenticator-Microsoft_Azure.png)
+      - Microsoft Azure Authenticator Prompt on Azure Web Portal<br>
+      ![Microsoft Azure screenshot of Authenticator Prompt on Azure Web Portal for Employee 3](Screenshots/Using_MS_Authenticator-Microsoft_Azure.png)
+      - Microsoft Azure Authenticator Prompt on Mobile<br>
+      ![Microsoft Azure screenshot of Authenticator Prompt on Microsoft Authenticator for Employee 3](Screenshots/Screenshot_20260820_172712_Authenticator.jpg)
