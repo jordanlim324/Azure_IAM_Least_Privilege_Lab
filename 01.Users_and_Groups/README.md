@@ -74,7 +74,7 @@ Shirabuki Corporation currently has two administrators, three employees, and one
    - Authentication Method Policies page, Microsoft Authenticator Enabled by default.<br>
    ![Microsoft Azure screenshot of default authentication methods, Passkey (FIDO2) and Microsoft Authenticator highlighted](Screenshots/Authentication_Methods-Microsoft_Azure.png)
    - Verifying Authentication steps via Microsoft Authenticator for Employee 3<br>
-      - Setting up Microsoft Authenticator for the first time as Employee 3
+      - Setting up Microsoft Authenticator for the first time as Employee 3<br>
       ![Microsoft Azure screenshot of MFA setup for Employee 3](Screenshots/Setting_up_MS_Authenticator-Microsoft_Azure.png)
       - Microsoft Azure Authenticator Prompt on Azure Web Portal<br>
       ![Microsoft Azure screenshot of Authenticator Prompt on Azure Web Portal for Employee 3](Screenshots/Using_MS_Authenticator-Microsoft_Azure.png)
