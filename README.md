@@ -4,10 +4,18 @@ Demonstrating least-privilege IAM design in Microsoft Azure's EntraID using free
 
 Initally dated: 06 August 2026
 
-Most recent update: 20 August 2026
+Most recent update: 21 August 2026
 
 ## Project Overview
 This project is designed to leverage free Azure resources to understand and practice IAM principles for a fictionalized organization called Shirabuki Corporation. The primary goal of this project is to build a practical, demonstrable experience  with enterprise access control patterns before applying them in a production environment. Shirabuki Corp. has two admins, three employees, and one contractor.
+
+## Objectives
+- Apply least-privilege principles using Azure RBAC
+- Use security groups to manage access
+- Create and assign a custom RBAC role
+- Enforce baseline identity protections
+- Verify that permissions behave as intended
+- Evaluate the implementation from a GRC perspective
 
 ## Skills Demonstrated
 - Least privilege access design
@@ -19,29 +27,33 @@ This project is designed to leverage free Azure resources to understand and prac
 - MFA enforcement
 
 ## Tech Stack/Tools Used
-- Microsoft EntraID (free tier)
+- Microsoft Entra ID (free tier)
 - Azure RBAC
 - Azure CLI
-- Powershell
+- PowerShell
 - Markdown
+- Claude AI/LLM
+
+## AI Note:
+This project's design decisions, Azure configuration, and testing were performed independently. Claude (Anthropic) was used as a support tool for structuring documentation, troubleshooting technical issues, and editorial review of written content.
 
 ## Project Structure
 ```
 Azure_IAM_Least_Privilege_Lab/
 ├── README.md
 ├── LICENSE
-├── 01.Users_And_Groups/
+├── 01.Users_and_Groups/
 │   ├── README.md
 │   └── Screenshots/
 ├── 02.RBAC_Roles/
 │   ├── README.md
 │   ├── EmployeeCustomRoleDefinition.json
 │   └── Screenshots/
-├── 03.RBAC_Roles/
+├── 03.Access_Verification/
 │   ├── README.md
 │   ├── AzureCommands_EMP.md
 │   └── Screenshots/
-├── 04.Mini Self Audit - Governance, Risk, and Compliance         (in progress)
+├── 04.Mini_Audit_GRC         (in progress)
 │   ├── README.md
 │   └── Screenshots/
 ```
