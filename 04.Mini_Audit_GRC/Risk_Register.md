@@ -1,3 +1,5 @@
-| Risk ID | Description | Likelihood | Impact | Mitigation | Status |
-|:---------:|:-------------|:------------|:--------|:------------|:--------|
-| Risk ID | Description | Liklihood | Impact | Mitigation | Status|
+Risk ID | Date Identified (MM/DD/YYYY) | Risk Description | Likelihood (1-10) | Impact (1-10) | Mitigation | Status |
+|:---------:|:---------:|:-------------|:------------|:--------|:------------|:--------|
+|R01| 08/06/2026 | Administrators were granted Owner Level Access that could allow them to self-escalate or grant other members Owner Level Access without oversight, expanding the blast radius to an unreasonable level. | High | High | Administrator accounts were assigned the built-in "Contributor" status rather than "Owner" status.  | Mitigated |
+|R02| 08/06/2026 | Employees were given a custom role with a wildcard write permission (*/write), and grants access to create and/or modify any resource type in the resource group, exceeding the minimum access required for actual job function. | Medium | Medium | Identified as a design limitation resulting from the lab being resource-free. Recommended remediation: scope specific permissions to specific resource types (ex. Blob Storage) in a production implementation | Identified |
+R03 | Date Identified (MM/DD/YYYY) | Risk Description | Likelihood (1-10) | Impact (1-10) | Mitigation | Status |
