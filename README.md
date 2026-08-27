@@ -63,7 +63,7 @@ Azure_IAM_Least_Privilege_Lab/
 ├── 04.Mini_Audit_GRC         (in progress)
 │   ├── README.md
 │   └── Risk_Register.md
-└── Lessons_Learned.md
+└── Lessons_Learned.md        (in progress)
 ```
 
 ## Scenarios and Table of Contents
