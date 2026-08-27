@@ -1,12 +1,11 @@
 ## Summary
-The purpose of this document is to translate the IAM work into GRC language, demonstrating how the fictional company's IAM implementation can be evaluated against real-world security and governance standards such as ISO/IEC 27001 and NIST SP 800-53.
+The purpose of this document is to translate the IAM work into GRC language, demonstrating how the fictional company's IAM implementation can be evaluated through a risk register.
 
 ## The Problem
 Shirabuki Corporation is conducting an internal audit to evaluate its IAM implementation against applicable security and governance frameworks.
 
 ## What Was Built
    - Risk Register
-   - Control Mapping
 
 ## Decisions Made
    -  Decisions
@@ -17,6 +16,7 @@ Shirabuki Corporation is conducting an internal audit to evaluate its IAM implem
          - Likelihood and impact are on a scale of 1-10, with higher values representing greater impact or likelihood.
          - The thresholds were established for this project to categorize calculated risk scores.
       - Likelihood, Impact, and Risk Scoring Tables:
+
 <div align ="center">
 
 Likelihood Scoring Table
@@ -51,7 +51,7 @@ Risk Score Classification Table
 | -----: | -------- | -------------- |
 | 1–20   | Low      | Limited overall risk; generally lower priority |
 | 21–40  | Moderate | Moderate overall risk; may require planned remediation |
-| 41–60  | High     | Signifigant overall risk; remediation should be prioritized |
+| 41–60  | High     | Significant overall risk; remediation should be prioritized |
 | 61–100 | Critical | Severe overall risk, remediation should receive high priority|
 
 </div align = "center">

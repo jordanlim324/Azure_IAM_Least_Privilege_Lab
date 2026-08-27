@@ -1,13 +1,13 @@
 # Azure IAM Least Privilege Lab
 
-Demonstrating least-privilege IAM design in Microsoft Azure's EntraID using free-tier RBAC and Security Defaults.
+Demonstrating least-privilege IAM design in Microsoft Entra ID using free-tier RBAC and Security Defaults.
 
-Initally dated: 06 August 2026
+Initially dated: 06 August 2026
 
 Most recent update: 26 August 2026
 
 ## Project Overview
-This project is designed to leverage free Azure resources to understand and practice IAM principles for a fictionalized organization called Shirabuki Corporation. The primary goal of this project is to build a practical, demonstrable experience  with enterprise access control patterns before applying them in a production environment. Shirabuki Corp. has two admins, three employees, and one contractor.
+This project is designed to leverage free Azure resources to understand and practice IAM principles for a fictionalized organization called Shirabuki Corporation. The primary goal of this project is to build a practical, demonstrable experience with enterprise access control patterns before applying them in a production environment. Shirabuki Corp. has two admins, three employees, and one contractor.
 
 ## Objectives
 - Apply least-privilege principles using Azure RBAC
@@ -22,9 +22,9 @@ This project is designed to leverage free Azure resources to understand and prac
 - Custom RBAC roles
 - Group-based access assignment
 - Security baseline configurations
-- Infrastructure documented as code
+- Azure CLI / PowerShell
 - Security Defaults
-- MFA enforcement
+- MFA registration / baseline identity protection
 
 ## Tech Stack/Tools Used
 - Microsoft Entra ID (free tier)
@@ -34,8 +34,15 @@ This project is designed to leverage free Azure resources to understand and prac
 - Markdown
 - Claude AI/LLM
 
+## Lab Limitations
+- No production workloads were deployed.
+- Employee permissions use wildcard write actions because the lab does not contain a representative resource workload.
+- Security Defaults were observed rather than custom-configured.
+- The risk assessment is a lightweight educational exercise rather than a formal organizational risk assessment.
+- The lab does not attempt to reproduce a complete enterprise IAM governance program.
+
 ## AI Note:
-This project's design decisions, Azure configuration, and testing were performed independently. Claude (Anthropic) was used as a support tool for structuring documentation, troubleshooting technical issues, and editorial review of written content.
+This project's design decisions, Azure configuration, and testing were performed independently. Claude AI (Anthropic) was used as a support tool for structuring documentation, troubleshooting technical issues, and editorial review of written content. ChatGPT (OpenAI) was also used as a support tool for editorial review of the contents within the lab.
 
 ## Project Structure
 ```
@@ -55,7 +62,8 @@ Azure_IAM_Least_Privilege_Lab/
 │   └── Screenshots/
 ├── 04.Mini_Audit_GRC         (in progress)
 │   ├── README.md
-│   └── Screenshots/
+│   └── Risk_Register.md
+└── Lessons_Learned.md
 ```
 
 ## Scenarios and Table of Contents

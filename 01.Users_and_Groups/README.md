@@ -19,9 +19,13 @@ Shirabuki Corporation currently has two administrators, three employees, and one
    - Scoped within 02.RBAC_Roles/README.md
 
 ## Decisions Made
+   - Root Tenant Account Decisions
+
+      The root tenant account represents a centralized governance authority for this fictional corporation and was used only as the administrative authority required to establish the lab environment.
+
    - Ownership Decisions
 
-      The group "sg-shirabuki-admins" is owned by the root tenant account, in this case, my personal account. I had initially wanted the administrators to own their own security group, but upon closer scrutinization, I realized this would lead to a recursive path of ownership. Both the employees and contractors security groups are jointly owned by Admins 1 and 2. While working on this section, I wanted the admin security group to own the employee and contractors group, but this couldn't be done due to limitations of EntraID, but also, a user should own a different group, as having a whole group owning another could lead to non-separated duties, leading to issues with accountability and auditability for which admin performed which action.
+      The group "sg-shirabuki-admins" is owned by the root tenant account, in this case, my personal account. I had initially wanted the administrators to own their own security group, but upon closer examination, I realized this would lead to a recursive path of ownership. Both the employees and contractors security groups are jointly owned by Admins 1 and 2. While working on this section, I wanted the admin security group to own the employee and contractors group, but this couldn't be done due to limitations of Microsoft Entra ID, but also, a user should own a different group, as having a whole group owning another could lead to non-separated duties, leading to issues with accountability and auditability for which admin performed which action.
 
    - External Contractor Decisions
 
@@ -37,7 +41,7 @@ Shirabuki Corporation currently has two administrators, three employees, and one
 
    - Security Defaults
 
-      The MFA registration prompt observed during Employee 1's first sign-in is enforced by Security Defaults, a tenant-wide Entra ID setting (Entra ID → Properties → Manage security defaults). Upon investigation, I confirmed this was "On" by default from tenant creation, meaning there was no need to configure it manually. Security Defaults enforces baseline protections across the entire tenant, including requiring passkeys and/or MFA registration for all users and blocking legacy authentication protocols that don't support modern security controls. This finding is notable because it demonstrates that a free-tier Azure tenant ships with security posture already active and in mind, rather than requiring paid licensing to achieve any baseline protection at all. Employee 3 was used as an example to demonstrate the MFA registraton flow on a fresh account.
+      The MFA registration prompt observed during Employee 1's first sign-in is enforced by Security Defaults, a tenant-wide Microsoft Entra ID setting (Microsoft Entra ID → Properties → Manage security defaults). Upon investigation, I confirmed this was "On" by default from tenant creation, meaning there was no need to configure it manually. Security Defaults provides tenant-wide baseline protections, including requiring users to register for MFA and blocking legacy authentication protocols. The MFA registration flow observed during testing used Microsoft Authenticator. This finding is notable because it demonstrates that a free-tier Azure tenant ships with security posture already active and in mind, rather than requiring paid licensing to achieve any baseline protection at all. Employee 3 was used as an example to demonstrate the MFA registration flow on a fresh account.
 
 ## Screenshots
 - Users List<br>

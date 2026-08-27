@@ -2,7 +2,7 @@
 Now that users, roles, and basic access controls have been established, I wanted to test and verify that my access controls were working as I had created them in the RBAC Roles phase.
 
 ## The Problem
-Shirabuki Corporation has defined and created role-based permissions for Administrators, Employees, and Contractors. While this is a step in the right direction, the company wants to have the permissions tested by an authenticated user before being rolled out to employees and contractors in production. While a majority of users would interact with their accounts through a web portal, verification will also be performed via Azure CLI to ensure that verification happens regardless of the method of entry. Testing both methods rules out the possibility that a restriction is an enforced access boundary, rather than a UI convenience, like a greyed out button.
+Shirabuki Corporation has defined and created role-based permissions for Administrators, Employees, and Contractors. While this is a step in the right direction, the company wants to have the permissions tested by an authenticated user before being rolled out to employees and contractors in production. While a majority of users would interact with their accounts through a web portal, verification will also be performed via Azure CLI to ensure that verification happens regardless of the method of entry. Testing both methods helps rule out the possibility that a restriction is just a UI convenience (e.g., a greyed out button) rather than an enforced boundary.
 
 ## What Was Built
 - This phase of the project leans more towards the testing of RBAC functionality within both the user portal and Azure CLI to visualize the enforcement mechanism in two different ways.
@@ -12,7 +12,7 @@ Shirabuki Corporation has defined and created role-based permissions for Adminis
 
 ## Decisions Made
    -  Decisions
-      - Since I had multiple users to test functionality, I decided to demonstrate the access controls by using the follow methodology:
+      - Since I had multiple users to test functionality, I decided to demonstrate the access controls by using the following methodology:
          - Employee 1: Screenshots to see how the user would see access controls from Azure Web Portal.
             - Test cases:
                - Tag the resource group with a "TestTag1: Employee1Verification" tag. (Expected Success)
