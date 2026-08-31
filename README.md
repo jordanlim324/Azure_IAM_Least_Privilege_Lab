@@ -41,7 +41,7 @@ This project is designed to leverage free Azure resources to understand and prac
 - The risk assessment is a lightweight educational exercise rather than a formal organizational risk assessment.
 - The lab does not attempt to reproduce a complete enterprise IAM governance program.
 
-## AI Note:
+## AI Note
 This project's design decisions, Azure configuration, and testing were performed independently. Claude AI (Anthropic) was used as a support tool for structuring documentation, troubleshooting technical issues, and editorial review of written content. ChatGPT (OpenAI) was also used as a support tool for editorial review of the contents within the lab.
 
 ## Project Structure
