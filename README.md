@@ -60,7 +60,7 @@ Azure_IAM_Least_Privilege_Lab/
 │   ├── README.md
 │   ├── AzureCommands_EMP.md
 │   └── Screenshots/
-├── 04.Mini_Audit_GRC         (in progress)
+├── 04.Mini_Audit_GRC
 │   ├── README.md
 │   └── Risk_Register.md
 └── Lessons_Learned.md        (in progress)
