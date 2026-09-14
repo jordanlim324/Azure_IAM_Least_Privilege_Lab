@@ -55,6 +55,3 @@ Risk Score Classification Table
 | 61–100 | Critical | Severe overall risk, remediation should receive high priority|
 
 </div align = "center">
-
-
-## Screenshots
