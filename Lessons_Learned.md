@@ -30,7 +30,16 @@ Since this was my first time working in Azure's IAM and Entra ID spaces, I was s
 ## What I'd Do Differently At An Enterprise Scale
 - As a lab to familiarize myself with IAM principles for a fictional company, I understand that not everything in this lab could be considered best practice for an enterprise. One of the biggest points that I ended up realizing during this project is that this project doesn't truly reflect the enterprise, rather a team or department in a company.
 - 
+
 ## Skills Learned
 - Identity and Access Management
-- 
-- 
+- Role-Based Access Control (RBAC)
+- Application of Least Privilege Principles
+- Custom Azure Role Creation (JSON Role Definitions)
+- Security Group Governance
+- Azure CLI for identity and acces verification
+- External/Guest identity management for B2B/Contractor access
+- GRC Translation of Technical Controls
+- Risk Register creation
+- Technical Documentation
+

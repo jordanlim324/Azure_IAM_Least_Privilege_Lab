@@ -6,6 +6,7 @@ Shirabuki Corporation is conducting an internal audit to evaluate its IAM implem
 
 ## What Was Built
    - Risk Register
+   - NIST CSF and MITRE ATT&CK Framework Alignment Chart
 
 ## Decisions Made
    -  Decisions
