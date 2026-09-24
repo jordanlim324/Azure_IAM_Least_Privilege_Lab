@@ -9,10 +9,10 @@ Throughout the creation and implementation of this project I had noticed a few r
 
 | NIST CSF 2.0 Function | How This Lab Maps To The Function |
 |:-------:|:--------:|
-|Govern||
-|Identify||
-|Protect||
-|Detect||
+|Govern| Ownership model, with root tenant as governing authority, and Risk Register representing governance decisions and risk management strategies.|
+|Identify| User/group inventory across three tiers (Administrator, Employee, Contractor) and Risk Register Scoring (Likelihood x Impact) representing asset identification and risk assessment.|
+|Protect| Project Core - Role Based Access Control (RBAC), Least-Privilege role design, Security Defaults and MFA Enforcement, and mandatory password resets all fall under access control and identity protections.|
+|Detect|Gap/Missing - The project has no logging, monitoring, or SIEM integration. No clear way to detect the misuse of access that is technically authorized.|
 |Respond|Out of Scope for lab|
 |Recover|Out of Scope for lab|
 
@@ -26,7 +26,7 @@ Throughout the creation and implementation of this project I had noticed a few r
 | Risk | MITRE ATT&CK Mapping |
 |:-------:|:--------:|
 |Owner Escalation and Self Managed Admin Group Ownership (R01 and R02)|T1098 - Account Manipulation|
-|Uncontrolled Risk Assignment (R05) | T1098.003 - Account Manipulation: Additional Cloud Roles |
-|Contractor/Guest Account Handling| T1078.004 - Valid Accounts: Cloud Accounts |
+|Uncontrolled Role Assignment (R05) | T1098.003 - Account Manipulation: Additional Cloud Roles |
+|Contractor/Guest Account Handling (R04) | T1078.004 - Valid Accounts: Cloud Accounts |
 
 </div align = center>
