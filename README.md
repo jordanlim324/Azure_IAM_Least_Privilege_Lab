@@ -61,9 +61,10 @@ Azure_IAM_Least_Privilege_Lab/
 │   ├── AzureCommands_EMP.md
 │   └── Screenshots/
 ├── 04.Mini_Audit_GRC
+│   ├── Framework_Alignment_Chart.md
 │   ├── README.md
 │   └── Risk_Register.md
-└── Lessons_Learned.md        (in progress)
+└── Lessons_Learned.md
 ```
 
 ## Scenarios and Table of Contents
